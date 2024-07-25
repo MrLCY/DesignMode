@@ -2,6 +2,8 @@ package CommondPattern;
 
 public class SimpleRemoteControl {
     Commond commond;
+    Commond oncommond[] ,offcommond[],undoCommond;
+
 
     public void setCommond(Commond commond) {
         this.commond = commond;

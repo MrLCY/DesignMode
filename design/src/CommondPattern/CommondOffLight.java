@@ -1,17 +1,17 @@
 package CommondPattern;
 
-public class CommondOnLight implements Commond{
+public class CommondOffLight implements Commond{
     Light light;
-    public CommondOnLight(Light light){
+    public CommondOffLight(Light light){
         this.light = light;
     }
     @Override
     public void execute() {
-        this.light.On();
+        this.light.Off();
     }
 
     @Override
     public void undo() {
-        this.light.Off();
+        this.light.On();
     }
 }

@@ -9,4 +9,9 @@ public class CommondUperDoor implements Commond{
     public void execute() {
         gargerDoor.uper();
     }
+
+    @Override
+    public void undo() {
+        this.gargerDoor.down();
+    }
 }
