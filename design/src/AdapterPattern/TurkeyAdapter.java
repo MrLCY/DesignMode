@@ -2,7 +2,7 @@ package AdapterPattern;
 
 import StrategyPattern.Duck;
 
-public class TurkeyAdapter implements Duck {
+public class TurkeyAdapter extends Duck {
     Turkey turkey;
     public TurkeyAdapter(Turkey turkey){
         this.turkey = turkey;
